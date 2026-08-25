@@ -1,6 +1,6 @@
 # FiveAges Gen1 Robot USDs
 
-中科第五纪（FiveAges）**第一代**机器人的 USD 仿真资产（[fa-w1-usds](https://github.com/fiveages-sim/fa-w1-usds)），作为 [robot_usds](https://github.com/fiveages-sim/robot_usds) 的子模块挂载于 `humanoid/FiveAges/Gen1/`。
+中科第五纪（FiveAges）**第一代**机器人的 USD 仿真资产（[fiveages-gen1-robot-usds](https://github.com/fiveages-sim/fiveages-gen1-robot-usds)），作为 [robot_usds](https://github.com/fiveages-sim/robot_usds) 的子模块挂载于 `humanoid/FiveAges/Gen1/`。
 
 ## 目录结构
 
