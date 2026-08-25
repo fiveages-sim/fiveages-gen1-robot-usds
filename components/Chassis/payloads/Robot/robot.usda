@@ -1,0 +1,80 @@
+#usda 1.0
+(
+    defaultPrim = "Chassis"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Chassis" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    string isaac:description
+    string isaac:namespace
+    prepend rel isaac:physics:robotJoints = [
+        </Chassis/joints/chassis_left_joint>,
+        </Chassis/joints/chassis_right_joint>,
+    ]
+    prepend rel isaac:physics:robotLinks = [
+        </Chassis/base_footprint>,
+        </Chassis/chassis_left_Link>,
+        </Chassis/chassis_right_Link>,
+    ]
+
+    over "base_footprint" (
+        prepend apiSchemas = ["IsaacLinkAPI"]
+    )
+    {
+        string isaac:nameOverride
+    }
+
+    over "chassis_left_Link" (
+        prepend apiSchemas = ["IsaacLinkAPI"]
+    )
+    {
+        string isaac:nameOverride
+    }
+
+    over "joints"
+    {
+        over "chassis_left_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+            string isaac:nameOverride
+            float[] isaac:physics:AccelerationLimit
+            int isaac:physics:index
+            float[] isaac:physics:JerkLimit
+            int isaac:physics:Rot_X:DofOffset
+            int isaac:physics:Rot_Y:DofOffset
+            int isaac:physics:Rot_Z:DofOffset
+            int isaac:physics:Tr_X:DofOffset
+            int isaac:physics:Tr_Y:DofOffset
+            int isaac:physics:Tr_Z:DofOffset
+        }
+
+        over "chassis_right_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+            string isaac:nameOverride
+            float[] isaac:physics:AccelerationLimit
+            int isaac:physics:index
+            float[] isaac:physics:JerkLimit
+            int isaac:physics:Rot_X:DofOffset
+            int isaac:physics:Rot_Y:DofOffset
+            int isaac:physics:Rot_Z:DofOffset
+            int isaac:physics:Tr_X:DofOffset
+            int isaac:physics:Tr_Y:DofOffset
+            int isaac:physics:Tr_Z:DofOffset
+        }
+    }
+
+    over "chassis_right_Link" (
+        prepend apiSchemas = ["IsaacLinkAPI"]
+    )
+    {
+        string isaac:nameOverride
+    }
+}
+

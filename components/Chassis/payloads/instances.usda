@@ -1,0 +1,526 @@
+#usda 1.0
+(
+    doc = """Generated from Composed Stage of root layer /home/fiveages/libraries/FaSim-Isaac/robots/humanoid/FiveAges/Gen1/components/Chassis/Chassis.usd
+
+
+Generated from Composed Stage of root layer /home/fiveages/libraries/FaSim-Isaac/robots/humanoid/FiveAges/Gen1/components/Chassis/payloads/base.usd
+"""
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Scope "Instances"
+{
+    def Xform "mesh" (
+        prepend references = @./geometries.usd@</Geometries/mesh>
+    )
+    {
+        over "mesh"
+        {
+            over "subset_" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "silver" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/silver>
+            }
+
+            over "black0" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black2" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "silver0" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/silver>
+            }
+
+            over "black3" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black4" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black5" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black6" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black7" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black8" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black9" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black10" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black11" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black12" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black13" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black14" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black15" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "silver1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/silver>
+            }
+
+            over "black16" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black17" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black18" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black19" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black20" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black21" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black22" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black23" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black24" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black25" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black26" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black27" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black28" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black29" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black30" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black31" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black32" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black33" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black34" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black35" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black36" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black37" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black38" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black39" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "silver2" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/silver>
+            }
+
+            over "black40" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black41" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black42" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black43" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black44" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black45" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black46" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black47" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black48" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black49" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black50" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+
+            over "black51" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/mesh/VisualMaterials/black>
+            }
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "black" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/black>
+            )
+            {
+            }
+
+            def Material "silver" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/silver>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "mesh_1" (
+        prepend references = @./geometries.usd@</Geometries/mesh_1>
+    )
+    {
+        over "mesh_1" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/mesh_1/VisualMaterials/wheel>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "wheel" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/wheel>
+            )
+            {
+            }
+        }
+    }
+}
+

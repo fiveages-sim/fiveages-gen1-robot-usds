@@ -1,0 +1,85 @@
+#usda 1.0
+(
+    defaultPrim = "W1"
+)
+
+def Xform "W1"
+{
+    def "Left_Arm" (
+        prepend payload = @../../../../../../manipulators/Rokae/AR5_SRS/AR5_SRS.usda@
+        variants = {
+            string Side = "left"
+            string EE = "RG75"
+        }
+    )
+    {
+        quatd xformOp:orient = (0.5003980994224548, -0.4999998211860657, 0.4999998211860657, 0.4996018707752228)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (-0.0725, 0.12, 1.2045)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "root_joint" (
+            active = false
+        )
+        {
+        }
+
+        over "base_link"
+        {
+            def PhysicsFixedJoint "AssemblerFixedJoint"
+            {
+                rel physics:body0 = </W1/body_link4/arm_base>
+                rel physics:body1 = </W1/Left_Arm/base_link>
+                point3f physics:localPos0 = (0, 0.12, 0)
+                point3f physics:localPos1 = (0, 0, 0)
+                quatf physics:localRot0 = (0.5003981, -0.49999982, 0.49999982, 0.49960187)
+                quatf physics:localRot1 = (1, 0, 0, 0)
+            }
+        }
+
+        over "joints"
+        {
+            over "left_joint1"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_joint2"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_joint3"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_joint4"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_joint5"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_joint6"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_joint7"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+        }
+    }
+}

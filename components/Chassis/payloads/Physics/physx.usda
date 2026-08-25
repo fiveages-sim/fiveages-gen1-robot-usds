@@ -1,0 +1,82 @@
+#usda 1.0
+(
+    defaultPrim = "Chassis"
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+def "Chassis"
+{
+    over "base_footprint" (
+        prepend apiSchemas = ["PhysxArticulationAPI"]
+    )
+    {
+        bool physxArticulation:enabledSelfCollisions = 0
+        int physxArticulation:solverPositionIterationCount = 32
+        int physxArticulation:solverVelocityIterationCount = 1
+
+        over "collisions"
+        {
+            over "mesh_0"
+            {
+                over "sphere" (
+                    prepend apiSchemas = ["PhysxMaterialAPI"]
+                )
+                {
+                    uniform token physxMaterial:frictionCombineMode = "min"
+                }
+            }
+
+            over "mesh_1"
+            {
+                over "sphere" (
+                    prepend apiSchemas = ["PhysxMaterialAPI"]
+                )
+                {
+                    uniform token physxMaterial:frictionCombineMode = "min"
+                }
+            }
+
+            over "mesh_2"
+            {
+                over "sphere" (
+                    prepend apiSchemas = ["PhysxMaterialAPI"]
+                )
+                {
+                    uniform token physxMaterial:frictionCombineMode = "min"
+                }
+            }
+
+            over "mesh_3"
+            {
+                over "sphere" (
+                    prepend apiSchemas = ["PhysxMaterialAPI"]
+                )
+                {
+                    uniform token physxMaterial:frictionCombineMode = "min"
+                }
+            }
+        }
+    }
+
+    over "joints"
+    {
+        over "chassis_left_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = inf
+        }
+
+        over "chassis_right_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = inf
+        }
+    }
+}
+

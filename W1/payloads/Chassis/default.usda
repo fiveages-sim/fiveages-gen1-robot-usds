@@ -1,0 +1,62 @@
+#usda 1.0
+(
+    defaultPrim = "W1"
+)
+
+def Xform "W1"
+{
+    def "Chassis" (
+        prepend payload = @../../../components/Chassis/Chassis.usda@
+        variants = {
+            string ROS = "none"
+        }
+    )
+    {
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (-0.04, 0, -0.265)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "base_footprint" (
+            delete apiSchemas = ["PhysicsArticulationRootAPI"]
+        )
+        {
+            def PhysicsFixedJoint "AssemblerFixedJoint"
+            {
+                rel physics:body0 = </W1/base_link>
+                rel physics:body1 = </W1/Chassis/base_footprint>
+                point3f physics:localPos0 = (0, 0, 0)
+                point3f physics:localPos1 = (0.04, 0, 0.265)
+                quatf physics:localRot0 = (1, 0, 0, 0)
+                quatf physics:localRot1 = (1, 0, 0, 0)
+            }
+        }
+
+        over "joints"
+        {
+            over "chassis_left_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "chassis_right_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+        }
+    }
+
+    over "Graph"
+    {
+        over "ROS_Diff_Controller"
+        {
+            over "DifferentialController"
+            {
+                custom double inputs:wheelDistance = 0.3692
+                custom double inputs:wheelRadius = 0.0842
+            }
+        }
+    }
+}
