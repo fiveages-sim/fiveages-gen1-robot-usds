@@ -14,7 +14,7 @@ def Xform "Chassis"
             over "lidar_link"
             {
                 def "oradar_ms500" (
-                    prepend payload = @../../../../../../../sensors/oradar_ms500.usd@
+                    prepend payload = @../../../../../../../sensors/orbbec/oradar_ms500.usd@
                 )
                 {
                     quatf xformOp:orient = (1, 0, 0, 0)
@@ -27,3 +27,4 @@ def Xform "Chassis"
         }
     }
 }
+
